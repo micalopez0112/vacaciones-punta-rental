@@ -1,0 +1,25 @@
+.things-to-do {
+  padding: 100px 80px;
+}
+
+.restaurants-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.que-hacemos-hoy {
+  width: 200px;
+}
+
+.things-to-do-title {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 35px;
+  color: var(--tertiary);
+  display: flex;
+}
+
+.restaurant {
+  text-decoration: none;
+  color: black;
+}

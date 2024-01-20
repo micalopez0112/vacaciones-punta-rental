@@ -1,0 +1,30 @@
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 50px;
+  background: var(--background-odd);
+}
+
+.img {
+  width: 100%;
+  max-width: 200px; /* Maximum width for each image */
+  height: auto; /* Set height to auto */
+  margin: 25px; /* Adjust spacing between elements */
+}
+
+@media (min-width: 600px) {
+  .logos {
+    flex-direction: row;
+  }
+
+  .img {
+    width: auto; /* Reset width to auto for side-by-side display */
+    height: 100%; /* Set height to 100% */
+    flex: 1 1 200px; /* Adjust flex properties */
+    min-width: 100px;
+  }
+}

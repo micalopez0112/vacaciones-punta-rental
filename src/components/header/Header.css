@@ -1,0 +1,260 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navbar section */
+
+.nav {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  line-height: 65px;
+  text-align: center;
+  background-color: var(--primary);
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  z-index: 100;
+}
+
+.logo {
+  width: 300px;
+  margin-left: 30px;
+  /* position: absolute;
+  left: 0px;
+  top: 0px; */
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.list-container {
+  width: 600px;
+  height: 65px;
+
+  float: right;
+}
+
+.list {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.element {
+  height: 65px;
+  font-weight: 500;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--secondary);
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: var(--tertiary);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: var(--secondary);
+  bottom: -3px;
+  left: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.media-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  display: none;
+}
+
+.main-media-button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.line {
+  width: 98%;
+  height: 3px;
+  display: block;
+  background-color: var(--tertiary);
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+.main-media-button:hover .line {
+  transform: rotateY(180deg);
+  background-color: var(--tertiary);
+}
+
+.main-media-button:hover .line:nth-of-type(1) {
+  transition: all 0.5s;
+}
+
+.main-media-button:hover .line:nth-of-type(2) {
+  transition: all 0.4s;
+}
+
+.main-media-button:hover .line:nth-of-type(3) {
+  transition: all 0.3s;
+}
+
+.main-media-button.active .line:nth-of-type(1) {
+  transform: rotate3d(0, 0, 1, 45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.main-media-button.active .line:nth-of-type(2) {
+  display: none;
+}
+
+.main-media-button.active .line:nth-of-type(3) {
+  transform: rotate3d(0, 0, 1, -45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.media-button .main-media-button .active {
+  /* position: absolute; */
+  top: 0px;
+  color: red;
+}
+
+/* Home section */
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: #cf7070;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+}
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+}
+.projects {
+  width: 100%;
+  height: 100vh;
+  background-color: #6aa6d2;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Medai qurey section */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0;
+  }
+  .element {
+    height: 55px;
+  }
+  .logo-img {
+    position: relative;
+    top: 5px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+
+  .logo {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+
+  .logo-img {
+    position: relative;
+    top: 5px;
+    width: 250px;
+  }
+
+  .list-container {
+    width: 100%;
+    margin-top: 65px;
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .show_list {
+    left: 0px !important;
+  }
+
+  .list {
+    transition: all 1s;
+    flex-direction: column;
+    width: 100%;
+    height: 140px;
+    top: 60px;
+    position: absolute;
+    right: 0;
+    left: 800px;
+  }
+
+  .element {
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary);
+  }
+
+  .nav-link {
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    display: table;
+  }
+
+  .media-button {
+    display: block;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+}
