@@ -74,10 +74,10 @@
 
 .image-puerto {
   position: fixed;
-  top: 70px; /* Ajusta según la altura del contenido antes de la imagen */
+  top: 0px;
   left: 0;
   width: 100%;
-  height: 100%; /* La altura que desees */
+  height: 100dvh;
   z-index: -1;
 }
 
