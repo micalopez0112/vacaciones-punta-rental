@@ -17,7 +17,7 @@
 
 .content {
   position: absolute;
-  width: 30%;
+  width: 80%;
   height: 100%;
   top: 0;
   display: flex;
@@ -39,4 +39,10 @@
 
 .seeApartments:hover {
   background: var(--tertiary);
+}
+
+@media (max-width: 754px) {
+  .content {
+    font-size: 10px;
+  }
 }

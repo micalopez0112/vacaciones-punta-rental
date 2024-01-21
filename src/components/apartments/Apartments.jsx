@@ -20,12 +20,15 @@ const Apartments = () => {
       </div>
       <div className="apartments-buildings-container">
         <div className="apartments-container">
-          <div className="title">Alojamientos</div>
-          <div className="apartments-section-description">
-            Acá podes ver nuestros apartamentos disponibles para tu estadía en
-            Punta del Este! Entrá en el link de Airbnb para confirmar tu
-            apartamento!
+          <div className="title-desc">
+            <div className="title">Alojamientos</div>
+            <div className="apartments-section-description">
+              Acá podes ver nuestros apartamentos disponibles para tu estadía en
+              Punta del Este! Entrá en el link de Airbnb para confirmar tu
+              apartamento!
+            </div>
           </div>
+
           {apartments.map((apartment, id) => (
             <div className="card">
               <div className="slider-apartment">
