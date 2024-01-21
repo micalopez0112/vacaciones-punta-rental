@@ -21,10 +21,12 @@ html {
   padding: 0;
   width: 100%;
   height: 100%;
+  background-color: white; /* Agrega esta línea */
 }
 
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: white; /* Agrega esta línea */
 }
