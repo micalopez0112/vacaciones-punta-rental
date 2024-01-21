@@ -17,3 +17,23 @@
   height: 600px;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 1230px) {
+  .services-slider {
+    width: 750px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .services-slider {
+    width: 510px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .services-slider {
+    width: 310px;
+    height: 250px;
+  }
+}

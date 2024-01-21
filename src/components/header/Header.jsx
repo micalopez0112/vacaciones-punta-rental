@@ -10,6 +10,13 @@ function Header() {
     setShowMenu(!showMenu);
   };
 
+  const handleLinkClick = () => {
+    setShowMenu(false);
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <div>
       <nav className="nav">
@@ -23,22 +30,46 @@ function Header() {
           <div className="list-container " id="mainListDiv">
             <ul className={`list ${showMenu ? "show_list" : ""}`}>
               <li className="element">
-                <Link to={{ pathname: `apartments` }} className="nav-link">
+                <Link
+                  to={{ pathname: `apartments` }}
+                  className="nav-link"
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                >
                   Alojamientos
                 </Link>
               </li>
               <li className="element">
-                <Link to={{ pathname: `services` }} className="nav-link">
+                <Link
+                  to={{ pathname: `services` }}
+                  className="nav-link"
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                >
                   Servicios
                 </Link>
               </li>
               <li className="element">
-                <Link to={{ pathname: `things-to-do` }} className="nav-link">
+                <Link
+                  to={{ pathname: `things-to-do` }}
+                  className="nav-link"
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                >
                   Atracciones
                 </Link>
               </li>
               <li className="element">
-                <Link to={{ pathname: `contact` }} className="nav-link">
+                <Link
+                  to={{ pathname: `contact` }}
+                  className="nav-link"
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                >
                   Contacto
                 </Link>
               </li>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { FaInstagram, FaAirbnb, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -36,19 +37,24 @@ const Footer = () => {
             </a>
           </li>
           <li className="menu-elem">
-            <a href="/apartmens" className="menu-icon">
+            <Link to={{ pathname: `apartments` }} className="menu-icon">
               Alojamientos
-            </a>
+            </Link>
           </li>
           <li className="menu-elem">
-            <a href="/services" className="menu-icon">
-              Services
-            </a>
+            <Link to={{ pathname: `services` }} className="menu-icon">
+              Servicios
+            </Link>
           </li>
           <li className="menu-elem">
-            <a href="/contact" className="menu-icon">
+            <Link to={{ pathname: `things-to-do` }} className="menu-icon">
+              Atracciones
+            </Link>
+          </li>
+          <li className="menu-elem">
+            <Link to={{ pathname: `contact` }} className="menu-icon">
               Contacto
-            </a>
+            </Link>
           </li>
         </ul>
         <p className="footer-text">@2024 | Todos los derechos reservados</p>
