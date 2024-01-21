@@ -91,6 +91,10 @@
   .view-add-container {
     flex-direction: column;
   }
+
+  .info {
+    padding: 70px 25px;
+  }
 }
 
 .apartments-attractions-container {
