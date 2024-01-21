@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Slider.css";
 
 function Slider({ images }) {
+  console.log(images);
   const listRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullScreen, setIsFullScreen] = useState(false);

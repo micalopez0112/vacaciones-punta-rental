@@ -1,5 +1,6 @@
 .things-to-do {
   padding: 100px 80px;
+  min-height: 100dvh;
 }
 
 .restaurants-list {

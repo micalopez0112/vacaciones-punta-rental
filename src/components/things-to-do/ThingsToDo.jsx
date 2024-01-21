@@ -15,6 +15,7 @@ const ThingsToDo = () => {
                 href="https://www.instagram.com/chilloutrestouy"
                 className="restaurant"
                 target="_blank"
+                rel="noreferrer"
               >
                 Chillout Resto
               </a>
@@ -24,6 +25,7 @@ const ThingsToDo = () => {
                 href="https://www.instagram.com/elmercadopde"
                 className="restaurant"
                 target="_blank"
+                rel="noreferrer"
               >
                 El Mercado
               </a>
@@ -33,6 +35,7 @@ const ThingsToDo = () => {
                 href="https://www.instagram.com/zazupuerto/"
                 className="restaurant"
                 target="_blank"
+                rel="noreferrer"
               >
                 Zazú Puerto
               </a>
@@ -42,6 +45,7 @@ const ThingsToDo = () => {
                 href="https://www.instagram.com/boxgarden.pde/"
                 className="restaurant"
                 target="_blank"
+                rel="noreferrer"
               >
                 Box Garden
               </a>
@@ -50,7 +54,11 @@ const ThingsToDo = () => {
         </div>
       </div>
       <div className="more-things">
-        <a href="https://quehacemoshoy.com.uy/" target="_blank">
+        <a
+          href="https://quehacemoshoy.com.uy/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="que-hacemos-hoy" src={cosasParaHacerLogo} alt="" />
         </a>
       </div>

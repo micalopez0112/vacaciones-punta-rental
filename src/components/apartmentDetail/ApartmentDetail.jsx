@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 import { getApartmentById } from "../../apartmentsData";
@@ -24,7 +23,7 @@ const ApartmentDetail = () => {
       <h3>Images:</h3>
       <div>
         {apartment.imgs.map((img, index) => (
-          <img key={index} src={img} alt={`Image ${index + 1}`} />
+          <img key={index} src={img} alt="" />
         ))}
       </div>
       <a href={apartment.airbnb}>Airbnb</a>

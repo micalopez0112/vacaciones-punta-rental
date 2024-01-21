@@ -1,7 +1,19 @@
 .services {
-  padding-top: 100px;
+  padding: 100px 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 100dvh;
+}
+.services-text {
+  margin-bottom: 30px;
+  font-size: 20px;
+  padding: 0px 100px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.services-slider {
+  width: 1000px;
+  height: 600px;
+  margin-bottom: 30px;
 }

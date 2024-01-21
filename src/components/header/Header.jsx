@@ -24,7 +24,7 @@ function Header() {
             <ul className={`list ${showMenu ? "show_list" : ""}`}>
               <li className="element">
                 <Link to={{ pathname: `apartments` }} className="nav-link">
-                  Apartamentos
+                  Alojamientos
                 </Link>
               </li>
               <li className="element">
