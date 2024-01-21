@@ -1,6 +1,6 @@
 .info {
   display: flex;
-  padding: 70px 90px;
+  padding: 60px 90px 40px;
   flex-direction: column;
   background: white;
 }
@@ -69,7 +69,7 @@
 }
 
 .image-container {
-  height: 300px;
+  height: 350px;
 }
 
 .image-puerto {
@@ -93,7 +93,7 @@
   }
 
   .info {
-    padding: 70px 25px;
+    padding: 40px 25px 20px;
   }
 }
 

@@ -37,16 +37,6 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.seeApartments {
-  background: var(--secondary);
-  padding: 11px;
-  font-size: 18px;
-  margin: 30px;
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-}
-
 .seeApartments:hover {
   background: var(--tertiary);
 }

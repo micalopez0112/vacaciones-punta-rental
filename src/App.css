@@ -14,14 +14,12 @@
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-/* En App.css o en tu archivo de estilos */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  background: #fff;
-  z-index: -2;
-  position: relative;
+.button {
+  background: var(--secondary);
+  padding: 11px;
+  font-size: 18px;
+  margin: 30px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
 }

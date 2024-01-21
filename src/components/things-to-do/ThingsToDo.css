@@ -1,6 +1,10 @@
 .things-to-do {
+}
+
+.things-to-do-container {
   padding: 100px 80px;
   min-height: 100dvh;
+  background: white;
 }
 
 .restaurants-list {

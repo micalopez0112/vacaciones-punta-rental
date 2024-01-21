@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 20px;
   background: var(--background-odd);
 }
 

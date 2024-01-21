@@ -1,9 +1,4 @@
 .services {
-  padding: 100px 40px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100dvh;
 }
 .services-text {
   margin-bottom: 30px;
@@ -15,13 +10,31 @@
 .services-slider {
   width: 1000px;
   height: 600px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.services-container {
+  padding: 100px 40px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100dvh;
+  background: white;
+}
+
+.blank-space {
+  width: 100%;
+  height: 110px;
+  background: white;
 }
 
 @media screen and (max-width: 1230px) {
   .services-slider {
     width: 750px;
     height: 450px;
+  }
+  .services-text {
+    padding: 0px;
   }
 }
 

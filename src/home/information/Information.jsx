@@ -8,6 +8,11 @@ import { Link } from "react-router-dom";
 const Information = () => {
   return (
     <div className="info-container">
+      <div className="image-container">
+        <div className="image-puerto">
+          <img className="puerto-img" src={puertoImg} alt="" />
+        </div>
+      </div>
       <div className="info">
         <div className="title">
           Descubre tu lugar para visitar Punta del Este
@@ -64,7 +69,6 @@ const Information = () => {
 
       <div className="image-container">
         <div className="image-puerto">
-          {/* Utiliza la etiqueta img con la clase puerto-img */}
           <img className="puerto-img" src={puertoImg} alt="" />
         </div>
       </div>

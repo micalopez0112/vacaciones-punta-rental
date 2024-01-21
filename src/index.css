@@ -3,3 +3,11 @@
   padding: 0;
   font-family: sans-serif;
 }
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  z-index: -2;
+  position: relative;
+}

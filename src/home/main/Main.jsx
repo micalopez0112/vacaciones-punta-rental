@@ -17,7 +17,7 @@ const Main = () => {
       <div className="overlay"></div>
       <div className="content">
         <h1>Descubre tu próxima casa fuera de casa!</h1>
-        <Link to={{ pathname: `apartments` }} className="seeApartments">
+        <Link to={{ pathname: `apartments` }} className="button">
           Ver alojamientos
         </Link>
       </div>
