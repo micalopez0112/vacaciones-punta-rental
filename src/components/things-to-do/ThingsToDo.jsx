@@ -16,44 +16,44 @@ const ThingsToDo = () => {
         <div className="restaurants">
           <div className="things-to-do-title">Restaurantes</div>
           <div className="things-to-do-description">
-            Restaurantes descripcion
+            Explorá la gastronomía local!
           </div>
-          <div className="restaurants-list-container">
-            <ul className="restaurants-list">
-              <li className="restaurant-container">
+          <div className="to-do-list-container">
+            <ul className="to-do-list">
+              <li className="to-do-container">
                 <a
                   href="https://www.instagram.com/chilloutrestouy"
-                  className="restaurant"
+                  className="to-do-list"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Chillout Resto
                 </a>
               </li>
-              <li className="restaurant-container">
+              <li className="to-do-list-container">
                 <a
                   href="https://www.instagram.com/elmercadopde"
-                  className="restaurant"
+                  className="to-do-list"
                   target="_blank"
                   rel="noreferrer"
                 >
                   El Mercado
                 </a>
               </li>
-              <li className="restaurant-container">
+              <li className="to-do-list-container">
                 <a
                   href="https://www.instagram.com/zazupuerto/"
-                  className="restaurant"
+                  className="to-do-list"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Zazú Puerto
                 </a>
               </li>
-              <li className="restaurant-container">
+              <li className="to-do-list-container">
                 <a
                   href="https://www.instagram.com/boxgarden.pde/"
-                  className="restaurant"
+                  className="to-do-list"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -63,6 +63,56 @@ const ThingsToDo = () => {
             </ul>
           </div>
         </div>
+
+        <div className="places-to-visit">
+          <div className="things-to-do-title">Lugares para visitar</div>
+          <div className="things-to-do-description">Recorré como un local!</div>
+          <div className="to-do-list-container">
+            <ul className="to-do-list">
+              <li className="to-do-list-container">
+                <a
+                  href="https://www.instagram.com/chilloutrestouy"
+                  className="to-do-list"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Museo de Arte Contemporáneo Atchugarry (MACA)
+                </a>
+              </li>
+              <li className="to-do-list-container">
+                <a
+                  href="https://www.instagram.com/elmercadopde"
+                  className="to-do-list"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  La Barra
+                </a>
+              </li>
+              <li className="to-do-list-container">
+                <a
+                  href="https://www.instagram.com/zazupuerto/"
+                  className="to-do-list"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  El Puerto
+                </a>
+              </li>
+              <li className="to-do-list-container">
+                <a
+                  href=""
+                  className="to-do-list"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Laguna Garzón
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className="more-things">
           <a
             href="https://quehacemoshoy.com.uy/"

@@ -1,13 +1,16 @@
 .things-to-do {
+  min-height: 100dvh;
 }
 
 .things-to-do-container {
   padding: 100px 80px;
-  min-height: 100dvh;
   background: white;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
-.restaurants-list {
+.to-do-list {
   display: flex;
   flex-direction: column;
 }
@@ -19,12 +22,16 @@
 .things-to-do-title {
   font-weight: 500;
   font-size: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   color: var(--tertiary);
   display: flex;
 }
 
-.restaurant {
+.to-do-list {
   text-decoration: none;
   color: black;
+}
+
+.things-to-do-description {
+  margin-bottom: 25px;
 }
