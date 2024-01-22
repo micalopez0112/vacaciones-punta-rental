@@ -2,17 +2,25 @@
   min-height: 100dvh;
 }
 
+.activities {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
 .things-to-do-container {
-  padding: 100px 80px;
-  background: white;
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 80px;
 }
 
 .to-do-list {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  gap: 10px;
 }
 
 .que-hacemos-hoy {
@@ -30,8 +38,39 @@
 .to-do-list {
   text-decoration: none;
   color: black;
+  font-size: 18px;
 }
 
 .things-to-do-description {
-  margin-bottom: 25px;
+  font-size: 20px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.restaurants,
+.places-to-visit,
+.more-things {
+  background: white;
+  padding: 50px;
+}
+
+.things-to-do-title {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 35px;
+  color: var(--tertiary);
+}
+
+.more-things {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .things-to-do-container {
+    flex-direction: column;
+  }
 }
