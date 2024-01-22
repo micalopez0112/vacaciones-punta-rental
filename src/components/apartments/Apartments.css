@@ -85,14 +85,14 @@
 }
 
 .slider-apartment {
-  width: 700px;
-  height: 400px;
+  width: 565px;
+  height: 450px;
 }
 
 @media screen and (max-width: 1230px) {
   .slider-apartment {
     width: 500px;
-    height: 250px;
+    height: 400px;
   }
   .wrap {
     width: 500px;
@@ -113,7 +113,7 @@
 
   .slider-apartment {
     width: 550px;
-    height: 350px;
+    height: 440px;
     margin: 0px 0px;
   }
 }
@@ -121,7 +121,7 @@
 @media screen and (max-width: 600px) {
   .slider-apartment {
     width: 310px;
-    height: 250px;
+    height: 248px;
   }
 }
 
