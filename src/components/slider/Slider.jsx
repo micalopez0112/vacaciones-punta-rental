@@ -49,7 +49,7 @@ function Slider({ images }) {
               <img
                 src={item.imgUrl}
                 width={500}
-                height={280}
+                height={400}
                 alt=""
                 className="slider-img"
               />
