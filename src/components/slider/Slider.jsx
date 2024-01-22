@@ -3,59 +3,49 @@ import "./Slider.css";
 
 function Slider({ images }) {
   console.log(images);
-  const listRef = useRef();
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const carousel = useRef();
+  const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    const listNode = listRef.current;
-    const scrollWidth = listNode.scrollWidth / images.length;
-    listNode.scrollTo({ left: currentIndex * scrollWidth, behavior: "smooth" });
-  }, [currentIndex, images.length]);
+  const incrementCarousel = (delta) => {
+    if (!carousel.current) return;
 
-  const changeImage = (direction) => {
-    setCurrentIndex((prevIndex) => {
-      if (direction === "prev") {
-        return prevIndex > 0 ? prevIndex - 1 : images.length - 1;
-      } else {
-        return prevIndex < images.length - 1 ? prevIndex + 1 : 0;
-      }
-    });
+    const width = carousel.current.offsetWidth;
+
+    if (count + delta > images.length - 1) {
+      setCount(0);
+      carousel.current.scrollTo(0, 0);
+      return;
+    } else if (count + delta < 0) {
+      setCount(images.length - 1);
+      console.log(width, carousel.current.scrollLeft);
+      carousel.current.scrollTo(width * images.length - 1, 0);
+      return;
+    }
+
+    carousel.current.scrollTo(carousel.current.scrollLeft + width * delta, 0);
+    setCount((c) => c + delta);
   };
 
   return (
-    <div className={"slider-container"}>
+    <div className="carousel-container">
       <div
-        className="left arrow"
-        onClick={(e) => {
-          e.stopPropagation();
-          changeImage("prev");
-        }}
-      >
-        <div className="arrow-icon">{"<"}</div>
-      </div>
+        className="carousel-btn left-btn"
+        onClick={() => incrementCarousel(-1)}
+      />
       <div
-        className="right arrow"
-        onClick={(e) => {
-          e.stopPropagation();
-          changeImage("next");
-        }}
-      >
-        {">"}
-      </div>
-      <div className="container-images" ref={listRef}>
-        <ul className="slider-list">
-          {images.map((item, index) => (
-            <li className="slider-list-element" key={index}>
-              <img
-                src={item.imgUrl}
-                width={500}
-                height={400}
-                alt=""
-                className="slider-img"
-              />
-            </li>
-          ))}
-        </ul>
+        className="carousel-btn right-btn"
+        onClick={() => incrementCarousel(1)}
+      />
+      <div className="carousel" ref={carousel}>
+        {images.map((img, idx) => (
+          <div
+            key={`${idx}-${img.title}`}
+            className={idx === count ? "carousel-item active" : "carousel-item"}
+          >
+            <img src={img.imgUrl} alt={idx} />
+            <p>{img.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

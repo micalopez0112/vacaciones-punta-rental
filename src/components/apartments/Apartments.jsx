@@ -30,11 +30,10 @@ const Apartments = () => {
           </div>
 
           {apartments.map((apartment, id) => (
-            <div className="card">
+            <div className="card" key={id}>
               <div className="slider-apartment">
                 <Slider images={apartment.imgs} />
               </div>
-
               <div className="wrap">
                 <div className="ap-title">
                   <div className="apartment-title">{apartment.title}</div>

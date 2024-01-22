@@ -102,7 +102,7 @@
   }
 }
 
-@media screen and (max-width: 876px) {
+@media screen and (max-width: 1100px) {
   .card {
     flex-direction: column;
     margin: 0 20px;
