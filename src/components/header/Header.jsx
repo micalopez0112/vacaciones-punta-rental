@@ -22,7 +22,13 @@ function Header() {
       <nav className="nav">
         <div className="container">
           <div className="logo">
-            <Link to={{ pathname: `/` }} className="logo-link">
+            <Link
+              to={{ pathname: `/` }}
+              className="logo-link"
+              onClick={() => {
+                handleLinkClick();
+              }}
+            >
               <img src={logo} alt="" className="logo-img" />
             </Link>
           </div>

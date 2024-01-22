@@ -1,9 +1,14 @@
 import React from "react";
 import "./Footer.css";
-import { FaInstagram, FaAirbnb, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaAirbnb } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
   return (
     <div>
       <footer className="footer">
@@ -24,11 +29,6 @@ const Footer = () => {
               <FaAirbnb />
             </a>
           </li>
-          <li className="icon-elem">
-            <a href="/" className="icon">
-              <FaWhatsapp />
-            </a>
-          </li>
         </ul>
         <ul className="menu">
           <li className="menu-elem">
@@ -37,22 +37,46 @@ const Footer = () => {
             </a>
           </li>
           <li className="menu-elem">
-            <Link to={{ pathname: `apartments` }} className="menu-icon">
+            <Link
+              to={{ pathname: `apartments` }}
+              className="menu-icon"
+              onClick={() => {
+                handleLinkClick();
+              }}
+            >
               Alojamientos
             </Link>
           </li>
           <li className="menu-elem">
-            <Link to={{ pathname: `services` }} className="menu-icon">
+            <Link
+              to={{ pathname: `services` }}
+              className="menu-icon"
+              onClick={() => {
+                handleLinkClick();
+              }}
+            >
               Servicios
             </Link>
           </li>
           <li className="menu-elem">
-            <Link to={{ pathname: `things-to-do` }} className="menu-icon">
+            <Link
+              to={{ pathname: `things-to-do` }}
+              className="menu-icon"
+              onClick={() => {
+                handleLinkClick();
+              }}
+            >
               Atracciones
             </Link>
           </li>
           <li className="menu-elem">
-            <Link to={{ pathname: `contact` }} className="menu-icon">
+            <Link
+              to={{ pathname: `contact` }}
+              className="menu-icon"
+              onClick={() => {
+                handleLinkClick();
+              }}
+            >
               Contacto
             </Link>
           </li>

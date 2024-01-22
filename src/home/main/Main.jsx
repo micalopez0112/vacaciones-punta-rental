@@ -4,6 +4,11 @@ import "./Main.css";
 import { Link } from "react-router-dom";
 
 const Main = () => {
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
   return (
     <div className="main">
       <video
@@ -19,7 +24,11 @@ const Main = () => {
       <div className="overlay"></div>
       <div className="content">
         <h1>Descubre tu próxima casa fuera de casa!</h1>
-        <Link to={{ pathname: `apartments` }} className="button">
+        <Link
+          to={{ pathname: `apartments` }}
+          className="button"
+          onClick={handleLinkClick}
+        >
           Ver alojamientos
         </Link>
       </div>

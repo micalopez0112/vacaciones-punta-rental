@@ -6,6 +6,12 @@ import losDedos from "../../assets/images/los-dedos.jpg";
 import { Link } from "react-router-dom";
 
 const Information = () => {
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <div className="info-container">
       <div className="info">
@@ -40,20 +46,26 @@ const Information = () => {
       </div>
 
       <div className="apartments-attractions-container">
-        <div className="apartments-info">
+        <Link
+          to={{ pathname: `apartments` }}
+          className="apartments-info"
+          onClick={handleLinkClick}
+        >
           <div className="ap-info-text">Apartamentos</div>
-          <Link to={{ pathname: `apartments` }}>
+          <div className="img-container">
             <img className="info-img" src={apartment} alt="" />
-          </Link>
-        </div>
-        <div className="attractions-info">
+          </div>
+        </Link>
+        <Link
+          to={{ pathname: `things-to-do` }}
+          className="attractions-info"
+          onClick={handleLinkClick}
+        >
           <div className="at-info-text">Cosas para hacer</div>
           <div className="img-container">
-            <Link to={{ pathname: `things-to-do` }}>
-              <img className="info-img" src={losDedos} alt="" />
-            </Link>
+            <img className="info-img" src={losDedos} alt="" />
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className="info">
@@ -70,13 +82,21 @@ const Information = () => {
       <div className="view-add-container">
         <div className="view-properties-container">
           <div className="view-text"> Quiero ver las propiedades!</div>
-          <Link to={{ pathname: `apartments` }} className="view-button">
+          <Link
+            to={{ pathname: `apartments` }}
+            className="view-button"
+            onClick={handleLinkClick}
+          >
             Ver
           </Link>
         </div>
         <div className="add-property-container">
           <div className="add-text">Quiero agregar mi propiedad!</div>
-          <Link to={{ pathname: `contact` }} className="add-button">
+          <Link
+            to={{ pathname: `contact` }}
+            className="add-button"
+            onClick={handleLinkClick}
+          >
             Agregar{" "}
           </Link>
         </div>

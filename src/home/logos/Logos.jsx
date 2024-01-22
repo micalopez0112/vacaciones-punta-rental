@@ -7,7 +7,6 @@ const Logos = () => {
   return (
     <div className="logos">
       <img className="img" src={airbnb} alt="" />
-      <img className="img" src={booking} alt="" />
     </div>
   );
 };
