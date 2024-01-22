@@ -5,7 +5,6 @@ function Slider({ images }) {
   console.log(images);
   const listRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFullScreen, setIsFullScreen] = useState(false);
 
   useEffect(() => {
     const listNode = listRef.current;
@@ -23,27 +22,8 @@ function Slider({ images }) {
     });
   };
 
-  const toggleFullScreen = () => {
-    if (!isFullScreen) {
-      setIsFullScreen(!isFullScreen);
-    }
-  };
-
-  const handleCloseButtonClick = (e) => {
-    e.stopPropagation(); // Stop the click event from propagating to the slider container
-    setIsFullScreen(!isFullScreen);
-  };
-
   return (
-    <div
-      className={`slider-container${isFullScreen ? " full-screen" : ""}`}
-      onClick={toggleFullScreen}
-    >
-      {isFullScreen && (
-        <div className="close-button" onClick={handleCloseButtonClick}>
-          Close
-        </div>
-      )}
+    <div className={"slider-container"}>
       <div
         className="left arrow"
         onClick={(e) => {
@@ -62,10 +42,7 @@ function Slider({ images }) {
       >
         {">"}
       </div>
-      <div
-        className={`container-images${isFullScreen ? " full-screen" : ""}`}
-        ref={listRef}
-      >
+      <div className="container-images" ref={listRef}>
         <ul className="slider-list">
           {images.map((item, index) => (
             <li className="slider-list-element" key={index}>
