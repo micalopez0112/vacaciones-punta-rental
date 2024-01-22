@@ -13,7 +13,9 @@ const Main = () => {
         loop
         muted
         playsInline
+        controls={false}
       ></video>
+
       <div className="overlay"></div>
       <div className="content">
         <h1>Descubre tu próxima casa fuera de casa!</h1>

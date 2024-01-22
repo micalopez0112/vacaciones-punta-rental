@@ -9,7 +9,7 @@
 }
 
 .slider-img {
-  object-fit: cover;
+  /* object-fit: cover; */
   z-index: 1;
   position: relative;
   width: 100%;
