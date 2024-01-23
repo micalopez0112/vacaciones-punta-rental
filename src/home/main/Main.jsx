@@ -18,7 +18,6 @@ const Main = () => {
         loop
         muted
         playsInline
-        controls={false}
       ></video>
 
       <div className="overlay"></div>
